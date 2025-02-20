@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - TravelAgency</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">🌍 VIRTUAL TRIP</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="trips.html">Destinations</a></li>
+                <li><a href="reservation.html">Réserver</a></li>
+                <li><a href="VR_page.html">VR Experience</a></li>
+                <li><a href="contact.html">Contactez-nous</a></li>
+                
+              
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reservation-section">
+            <h2>Réservez votre voyage</h2>
+            <form id="reservationForm">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required>
+
+                <label for="telephone">Téléphone:</label>
+                <input type="tel" id="telephone" name="telephone" required>
+
+                <label for="passport">Numéro de passeport:</label>
+                <input type="text" id="passport" name="passport" required>
+
+                <label for="pays">Pays:</label>
+                <select id="pays" name="pays" required>
+                    <option value="tunisie">Tunisie</option>
+                    <option value="londres">Londres</option>
+                    <option value="bali">Bali</option>
+                    <option value="maldives">Maldives</option>
+                    <option value="paris">Paris</option>
+                </select>
+
+                <label for="paiement">Mode de paiement:</label>
+                <select id="paiement" name="paiement" onchange="toggleCardField()" required>
+                    <option value="espece">Espèces</option>
+                    <option value="carte">Carte bancaire</option>
+                </select>
+
+                <div id="cardNumberField" style="display: none;">
+                    <label for="cardNumber">Numéro de carte:</label>
+                    <input type="text" id="cardNumber" name="cardNumber">
+                </div>
+
+                <label for="type">Type de réservation:</label>
+                <select id="type" name="type" required>
+                    <option value="individuel">Individuel</option>
+                    <option value="groupe">Groupe</option>
+                </select>
+
+                <button type="submit">Réserver</button>
+            </form>
+        </section>
+    </main>
+
+
+    <script src="reservation.js"></script>
+</body>
+</html>

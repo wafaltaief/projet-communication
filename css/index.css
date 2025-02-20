@@ -1,0 +1,75 @@
+/* Resetting basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #181818;
+    color: white;
+}
+
+/* Header styles */
+.header {
+    background-color: #202020;
+    color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Section: About Technology */
+.about-technology {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #181818;
+}
+
+.about-technology h2 {
+    font-size: 2.5rem;
+    color: #ff69b4; /* Pink color for the title */
+    margin-bottom: 20px;
+}
+
+.hexagon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hexagon {
+    width: 150px;
+    height: 150px;
+    background-color: #292929;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.hexagon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagon:hover {
+    transform: scale(1.1);
+    background-color: #ff69b4;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #202020;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}

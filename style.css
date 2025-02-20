@@ -1,0 +1,188 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+.header {
+    background-color: #320335;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo-img {
+    width: 150px; /* Adjust size to fit your design */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #fb00ff;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background-image: url('maldives1.jpg'); /* Replace with your desired background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+}
+
+.hero-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #430357;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #7e056e;
+}
+
+/* Services Section */
+.features {
+    background-color: #f7f5f8;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.features h2 {
+    font-size: 3rem;
+    color: #430243;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.features .feature {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    display: inline-block;
+    width: calc(33% - 40px); /* Three columns layout */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.features .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(3, 0, 3, 0.15);
+}
+
+.features .feature h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.features .feature p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.features .feature .cta-btn {
+    background-color: #cd88f3;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.features .feature .cta-btn:hover {
+    background-color: #2c0225;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .features .feature {
+        width: calc(50% - 40px); /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .features .feature {
+        width: 100%; /* One column on small screens */
+    }
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: #320335;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a {
+    color: #a3069b;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+/* Logo and Site Name */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    size: 100%;
+}
+
+.logo {
+    width: 60px; /* Small size */
+    height: 50px;
+    border-radius: 50%; /* Circular logo */
+    object-fit: cover;
+}

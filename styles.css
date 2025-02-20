@@ -1,0 +1,114 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #320335; /* Couleur principale */
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #FF6347; /* Couleur au survol */
+}
+
+/* Main Section */
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* VR Experience Section */
+.vr-experience {
+    background-color: #320335; /* Fond de la section en #320335 */
+    color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vr-experience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.vr-experience p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.vr-experience .btn {
+    background-color: #772c77; /* Couleur du bouton */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.vr-experience .btn:hover {
+    background-color: #be4bbe; /* Couleur du bouton au survol */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #320335;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* Logo and Site Name */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    size: 100%;
+    color: #f4f4f4;
+}
+
+.logo {
+    width: 60px; /* Small size */
+    height: 50px;
+    border-radius: 50%; /* Circular logo */
+    object-fit: cover;
+}

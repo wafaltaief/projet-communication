@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%; /* اجعل الحاوية تأخذ المساحة الكاملة */
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column; /* اجعل المحتوى يتكدس عموديًا */
+    gap: 20px; /* المسافة بين العناصر */
+    align-items: center; /* توسيط العناصر داخل الحاوية */
+}
+
+.destination {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* اجعل كل div يأخذ 80% من المساحة */
+    max-width: 1300px; /* إضافة حد أقصى للعرض */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.destination:hover {
+    transform: scale(1.05);
+}
+
+.destination-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-info {
+    padding: 20px;
+}
+
+h3 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+button.btn-book {
+    background-color: #7e056e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button.btn-book:hover {
+    background-color: #7e056e;
+}
+/* تنسيق رأس الصفحة */
+header {
+    background-color: #320335;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+/* تنسيق الرابط الذي يحمل الفئة btn-book */
+a.btn-book {
+    background-color: #7e056e; /* اللون الأزرق */
+    color: white; /* لون النص أبيض */
+    padding: 12px 25px; /* إضافة الحشوة حول النص */
+    border-radius: 5px; /* جعل الزوايا مستديرة */
+    text-decoration: none; /* إزالة خط تحت الرابط */
+    display: inline-block; /* جعله يتصرف كعنصر كتلة لتطبيق الحشوة والحدود */
+    font-size: 1.2rem; /* حجم الخط */
+    text-align: center; /* محاذاة النص في الوسط */
+    transition: background-color 0.3s, transform 0.3s; /* تأثير الانتقال */
+}
+
+/* تأثير عند المرور بالماوس */
+a.btn-book:hover {
+    background-color: #d50fbb; /* تغيير اللون إلى الأزرق الداكن */
+    transform: scale(1.05); /* تكبير الرابط قليلاً عند التمرير فوقه */
+}
+
+/* تأثير عند الضغط على الرابط */
+a.btn-book:active {
+    transform: scale(0.98); /* تصغير الرابط قليلاً عند الضغط عليه */
+}
